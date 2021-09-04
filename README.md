@@ -15,9 +15,8 @@ En cada *branch* el `README.md` mostrará la información en orden cronológico 
 
 ### Etapa 01 
 
-[Enlace](https://github.com/josanabr/flask-introduction/tree/etapa-01) a la etapa 01.
-
-En esta etapa se ha creado un directorio llamado `app` y en su interior se encuentra el archivo `app.py` el cual tiene el la lógica de la aplicación.
+En esta etapa se ha creado un directorio llamado `app` y en su interior se encuentra el archivo [`app.py`](app/app.py) el cual tiene la lógica de la aplicación.
+Por lo pronto es un código sencillo que muestra como se construyen *web services* con Flask.
 
 ## Requerimientos
 
