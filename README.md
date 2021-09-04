@@ -39,8 +39,13 @@ En esta etapa se adiciona una hoja de estilos [`main.css`](app/static/css/main.c
 
 ### Etapa 05 
 
+[Enlace a etapa 05](https://github.com/josanabr/flask-introduction/tree/etapa-05).
+
 En esta etapa se modifica el archivo [`app.py`](app/app.py) y se incluye la definición de un objeto `Todo` el cual será el tipo de dato que se almacenará en la base de datos.
 
+### Etapa 06 
+
+En esta etapa se modifica el archivo [`index.html`](app/templates/index.html) de modo que se tendrá una tabla que permitirá mostrar las tareas que están pendientes por ser realizadas.
 
 ## Requerimientos
 
