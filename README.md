@@ -2,42 +2,22 @@
 
 Este README.md consta de las siguientes secciones:
 
-* [Descripción](#descripcion) Aquí se encuentra un enlace a todas las etapas para desarrollar el aplicativo. 
+* [Descripción de las etapas](#descripcion-de-las-etapas)
 
 * [Requerimientos](#requerimientos) **Esta sección es la primera que debe leer** si desea seguir paso a paso lo que se encuentra en este repositorio. Esta sección brinda los elementos para preparar su entorno y llevar a cabo todas las etapas descritas en este repositorio.
 
-## Descripción 
+## Descripción de las etapas 
 
 El código de este repositorio se basa en la información provista por el tutorial que se presenta en [este video](https://www.youtube.com/watch?v=Z1RJmh_OqeA&t=91s).
 El video se siguió detenidamente y la forma de mostrar el desarrollo del aplicativo es a través de etapas y cada etapa estará en un *branch* de este repositorio.
 El *branch* uno es la primera etapa y de allí en adelante hasta llegar a la versión "final".
-En cada *branch* el `README.md` mostrará la información en orden cronológico inverso, es decir, la descripción de la primera etapa se encontrará al final del documento, la descripción de la segunda etapa estará de penúltima, la tercera etapa de ante-penúltima y así sucesivamente.
+En cada *branch* el `README.md` mostrará la información en orden cronológico inverso, es decir, la descripción de la primera etapa se encontrará al "final" del documento, la descripción de la segunda etapa estará de penúltima en el documento, la tercera etapa de ante-penúltima y así sucesivamente.
 
-Estas son todas las *branches* que al momento se han incorporado a este repositorio:
+### Etapa 01 
 
-* [Etapa 01]() Se crea el archivo `app.py` el cual contiene la lógica de la aplicación en el lenguaje Python.
+[Enlace](https://github.com/josanabr/flask-introduction/tree/etapa-01) a la etapa 01.
 
-* [Etapa 02]()
-
-* [Etapa 03]()
-
-* [Etapa 04]()
-
-* [Etapa 05]()
-
-* [Etapa 06]()
-
-* [Etapa 06]()
-
-* [Etapa 07]()
-
-* [Etapa 08]()
-
-* [Etapa 09]()
-
-* [Etapa 10]()
-
-* [Etapa 11]()
+En esta etapa se ha creado un directorio llamado `app` y en su interior se encuentra el archivo `app.py` el cual tiene el la lógica de la aplicación.
 
 ## Requerimientos
 
