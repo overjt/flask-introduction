@@ -15,7 +15,7 @@ En cada *branch* el `README.md` mostrará la información en orden cronológico 
 
 Estas son todas las *branches* que al momento se han incorporado a este repositorio:
 
-* [Etapa 01]()
+* [Etapa 01]() Se crea el archivo `app.py` el cual contiene la lógica de la aplicación en el lenguaje Python.
 
 * [Etapa 02]()
 
