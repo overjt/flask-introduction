@@ -13,9 +13,12 @@ El video se siguió detenidamente y la forma de mostrar el desarrollo del aplica
 El *branch* uno es la primera etapa y de allí en adelante hasta llegar a la versión "final".
 En cada *branch* el `README.md` mostrará la información en orden cronológico inverso, es decir, la descripción de la primera etapa se encontrará al "final" del documento, la descripción de la segunda etapa estará de penúltima en el documento, la tercera etapa de ante-penúltima y así sucesivamente.
 
-### Etapa 03
+### Etapa 01 
 
-En esta etapa se hace una modificación importante al archivo [`index.html`](app/templates/index.html) de modo que ahora se usará un archivo HTML ([`base.html`](app/templates/base.html)) como plantilla para cualquier otro archivo HTML en la aplicación.
+[Enlace a etapa 01](https://github.com/josanabr/flask-introduction/tree/etapa-01).
+
+En esta etapa se ha creado un directorio llamado `app` y en su interior se encuentra el archivo [`app.py`](app/app.py) el cual tiene la lógica de la aplicación.
+Por lo pronto es un código sencillo que muestra como se construyen *web services* con Flask.
 
 ### Etapa 02
 
@@ -23,12 +26,9 @@ En esta etapa se hace una modificación importante al archivo [`index.html`](app
 
 En el archivo [`app.py`](app/app.py) se ha modificado la función `index()` de modo que ahora se utiliza el método `render_template` de Flask para mostrar una página HTML en lugar de que la función retorne una sencilla cadena de caracteres.
 
-### Etapa 01 
+### Etapa 03
 
-[Enlace a etapa 01](https://github.com/josanabr/flask-introduction/tree/etapa-01).
-
-En esta etapa se ha creado un directorio llamado `app` y en su interior se encuentra el archivo [`app.py`](app/app.py) el cual tiene la lógica de la aplicación.
-Por lo pronto es un código sencillo que muestra como se construyen *web services* con Flask.
+En esta etapa se hace una modificación importante al archivo [`index.html`](app/templates/index.html) de modo que ahora se usará un archivo HTML ([`base.html`](app/templates/base.html)) como plantilla para cualquier otro archivo HTML en la aplicación.
 
 ## Requerimientos
 
