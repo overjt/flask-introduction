@@ -51,8 +51,34 @@ En esta etapa se modifica el archivo [`index.html`](app/templates/index.html) de
 
 ### Etapa 07 
 
+[Enlace a etapa 07](https://github.com/josanabr/flask-introduction/tree/etapa-07).
+
 En esta etapa el decorador de la función `index()`, en el archivo [`app.py`](app/app.py), cambia y ahora tiene la posibilidad de aceptar los métodos `POST` y `GET` del protocolo HTTP. 
 El archivo [`index.html`](app/templates/index.html) ahora incluye un formulario el cual permite que se adicione una tarea a la aplicación.
+
+### Etapa 08
+
+En esta etapa ya se comenzará a acceder a información a la base de datos. 
+La base de datos para efectos de este demo es la base de datos SQLite. 
+Para crear la base de datos se deben ejecutar los siguientes comandos desde la terminal y desde el directorio donde se encuentra el archivo `app.py`:
+
+```
+python3
+```
+
+En este momento se encuentra en un intérprete de comandos de Python 3. 
+ejecute las siguientes instrucciones:
+
+```
+from app import db
+db.create_all()
+exit()
+```
+
+Esto creará un archivo en el directorio donde está el archivo `app.py` llamado `todo.db`. 
+
+En esta etapa se ha modificado la función `index()`, en el archivo [`app.py`](app/app.py), de modo que ahora se reciben las peticiones del método `POST`, se procesan los datos enviados y estos se almacenan en base de datos.
+El archivo [`index.html`](app/templates/index.html) ahora llena la tabla con datos tomados de la base de datos.
 
 ## Requerimientos
 
