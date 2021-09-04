@@ -2,6 +2,8 @@
 
 {% block head %}
 
+<title> Task Master </title>
+
 {% endblock %}
 
 {% block body %}
@@ -13,7 +15,7 @@
 			<th> Task </th>
 			<th> Added </th>
 			<th> Actions </th>
-		</tr>   
+		</tr>
 		<tr>
 			<td></td>
 			<td></td>
@@ -24,6 +26,11 @@
 			</td>
 		</tr>
 	</table>
-</div>
-{% endblock %}
 
+	<form action="/" method="POST">
+		<input type="text" name="content" id="content">
+		<input type="submit" value="Add Task">
+	</form>
+</div>
+
+{% endblock %}

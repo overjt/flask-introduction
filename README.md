@@ -45,7 +45,14 @@ En esta etapa se modifica el archivo [`app.py`](app/app.py) y se incluye la defi
 
 ### Etapa 06 
 
+[Enlace a etapa 06](https://github.com/josanabr/flask-introduction/tree/etapa-06).
+
 En esta etapa se modifica el archivo [`index.html`](app/templates/index.html) de modo que se tendrá una tabla que permitirá mostrar las tareas que están pendientes por ser realizadas.
+
+### Etapa 07 
+
+En esta etapa el decorador de la función `index()`, en el archivo [`app.py`](app/app.py), cambia y ahora tiene la posibilidad de aceptar los métodos `POST` y `GET` del protocolo HTTP. 
+El archivo [`index.html`](app/templates/index.html) ahora incluye un formulario el cual permite que se adicione una tarea a la aplicación.
 
 ## Requerimientos
 
