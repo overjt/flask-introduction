@@ -15,7 +15,7 @@ En cada *branch* el `README.md` mostrará la información en orden cronológico 
 
 ### Etapa 02
 
-En el archivo [`app.py`](app/app.py) se ha modificado la función `index()` de modo que ahora se utiliza el método `render` de Flask para mostrar una página HTML en lugar de que la función retorne una sencilla cadena de caracteres.
+En el archivo [`app.py`](app/app.py) se ha modificado la función `index()` de modo que ahora se utiliza el método `render_template` de Flask para mostrar una página HTML en lugar de que la función retorne una sencilla cadena de caracteres.
 
 ### Etapa 01 
 
