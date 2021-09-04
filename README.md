@@ -15,7 +15,7 @@ En cada *branch* el `README.md` mostrará la información en orden cronológico 
 
 ### Etapa 03
 
-En esta etapa se hace una modificación importante al archivo `index.html` de modo que ahora se usará un archivo HTML ([`base.html`](app/templates/base.html)) como plantilla para cualquier otro archivo HTML en la aplicación.
+En esta etapa se hace una modificación importante al archivo [`index.html`](app/templates/index.html) de modo que ahora se usará un archivo HTML ([`base.html`](app/templates/base.html)) como plantilla para cualquier otro archivo HTML en la aplicación.
 
 ### Etapa 02
 
