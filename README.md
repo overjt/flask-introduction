@@ -90,8 +90,20 @@ En esta etapa se hace una modificación importante de la hoja de estilos [`main.
 
 ### Etapa 10
 
+[Enlace a etapa 10](https://github.com/josanabr/flask-introduction/tree/etapa-10).
+
 En esta etapa se adiciona un nuevo método y un nuevo *end-point* al archivo [`app.py`](app/app.py) de modo que se posibilita el borrado de tareas en la base de datos.
 Así mismo, se modifica el archivo [`index.html`](app/templates/index.html) de modo que se habilita en la referencia `Delete` el borrado de una tarea en particular.
+
+### Etapa 11
+
+En esta etapa se posibilita la actualización de registros en la base de datos.
+Se modifica el archivo [`app.py`](app/app.py) de modo que se adiciona el método `update` y el *end-point* `update` en la aplicaión. 
+
+Se habilita en la página HTML [`index.html`](app/templates/index.html) la referencia a `Update` de modo que ahora se puede actualizar la información de una tarea. 
+Para actualizar dicha información se crea una nueva página HTML llamada [`update.html`](app/templates/update.html) en la cual hay un formulario que contiene la información de la tarea que se desea actualizar.
+
+En la página [`index.html`](app/templates/index.html) se hace una validación de modo que si no hay tareas pendientes se muestre un mensaje como el siguiente: `There are no tasks. Create one below!`.
 
 ## Requerimientos
 
