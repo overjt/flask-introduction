@@ -84,7 +84,14 @@ El archivo [`index.html`](app/templates/index.html) ahora llena la tabla con dat
 
 ### Etapa 09
 
+[Enlace a etapa 09](https://github.com/josanabr/flask-introduction/tree/etapa-09).
+
 En esta etapa se hace una modificación importante de la hoja de estilos [`main.css`](app/static/css/main.css).
+
+### Etapa 10
+
+En esta etapa se adiciona un nuevo método y un nuevo *end-point* al archivo [`app.py`](app/app.py) de modo que se posibilita el borrado de tareas en la base de datos.
+Así mismo, se modifica el archivo [`index.html`](app/templates/index.html) de modo que se habilita en la referencia `Delete` el borrado de una tarea en particular.
 
 ## Requerimientos
 
