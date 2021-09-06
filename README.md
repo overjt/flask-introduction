@@ -163,6 +163,8 @@ Una vez el `docker-compose` se encuentre disponible se puede lanzar la ejecució
 docker-compose up
 ```
 
+El insumo de este comando es el archivo [`docker-compose.yml`](app/docker-compose.yml).
+
 
 ---
 
