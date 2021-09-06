@@ -109,6 +109,8 @@ En la página [`index.html`](app/templates/index.html) se hace una validación d
 
 ### Etapa 12
 
+[Enlace a etapa 12](https://github.com/josanabr/flask-introduction/tree/etapa-12).
+
 En esta etapa se habilita el acceso a uno de los *end-points* para que el acceso se haga a través de la línea de comando con herramientas como `curl`. 
 
 La función `index` localizada en el archivo [`app.py`](app/app.py) y con *end-point* `/` fue la que se modificó. 
@@ -117,6 +119,25 @@ Una vez modificada, la forma de acceder desde la línea de comandos es:
 
 ```
 curl -X POST -d '{"content": "leer libro"}' -H "Content-Type: application/json" http://localhost:5000/
+```
+
+### Etapa 13
+
+En esta etapa se contenerizará la aplicación. 
+
+A través de la tecnología de Docker se llevará a cabo la creación de una imagen de contenedor la cual contiene todos los insumos para que corra la aplicación.
+
+En este directorio se encuentra el archivo [`Dockerfile`](Dockerfile) el cual permite la creación de la imagen de contenedor.
+Se ejecuta el siguiente comando:
+
+```
+docker image build -t app.py .
+```
+
+Para ejecutar el contenedor recien creado,
+
+```
+docker container run  --rm -d -p 5000:5000 --name app.py app.py
 ```
 
 
