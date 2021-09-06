@@ -97,6 +97,8 @@ Así mismo, se modifica el archivo [`index.html`](app/templates/index.html) de m
 
 ### Etapa 11
 
+[Enlace a etapa 11](https://github.com/josanabr/flask-introduction/tree/etapa-11).
+
 En esta etapa se posibilita la actualización de registros en la base de datos.
 Se modifica el archivo [`app.py`](app/app.py) de modo que se adiciona el método `update` y el *end-point* `update` en la aplicaión. 
 
@@ -104,6 +106,19 @@ Se habilita en la página HTML [`index.html`](app/templates/index.html) la refer
 Para actualizar dicha información se crea una nueva página HTML llamada [`update.html`](app/templates/update.html) en la cual hay un formulario que contiene la información de la tarea que se desea actualizar.
 
 En la página [`index.html`](app/templates/index.html) se hace una validación de modo que si no hay tareas pendientes se muestre un mensaje como el siguiente: `There are no tasks. Create one below!`.
+
+### Etapa 12
+
+En esta etapa se habilita el acceso a uno de los *end-points* para que su acceso se haga a través de la línea de comando con herramientas como `curl`. 
+La función `index` localizada en el archivo [`app.py`](app/app.py) y con *end-point* `/` fue la que se modificó. 
+Una vez modificada, la forma de accederla desde la línea de comandos es a través del comando:
+
+```
+curl -X POST -d '{"content": "leer libro"}' -H "Content-Type: application/json" http://localhost:5000/
+```
+
+
+---
 
 ## Requerimientos
 

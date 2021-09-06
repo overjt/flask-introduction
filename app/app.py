@@ -27,7 +27,10 @@ class Todo(db.Model):
 @app.route('/', methods=['POST','GET'])
 def index(): 
     if request.method == 'POST': 
-        task_content = request.form['content'] 
+        if request.json and 'content' in request.json:
+            task_content = request.json.get('content',"")
+        else: 
+            task_content = request.form['content'] 
         # 
         # Se crea un objeto conforme al modelo declarado 
         # 
@@ -35,7 +38,10 @@ def index():
         try: 
             db.session.add(new_task) 
             db.session.commit() 
-            return redirect('/') 
+            if request.json:
+                return "Recorded!"
+            else: 
+                return redirect('/') 
         except: 
             return 'There was an issue adding your task' 
     else: 
