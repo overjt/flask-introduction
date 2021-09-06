@@ -127,7 +127,7 @@ En esta etapa se contenerizará la aplicación.
 
 A través de la tecnología de Docker se llevará a cabo la creación de una imagen de contenedor la cual contiene todos los insumos para que corra la aplicación.
 
-En este directorio se encuentra el archivo [`Dockerfile`](Dockerfile) el cual permite la creación de la imagen de contenedor.
+En este directorio se encuentra el archivo [`Dockerfile`](app/Dockerfile) el cual permite la creación de la imagen de contenedor.
 Se ejecuta el siguiente comando:
 
 ```
