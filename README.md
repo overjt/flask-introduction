@@ -123,6 +123,8 @@ curl -X POST -d '{"content": "leer libro"}' -H "Content-Type: application/json" 
 
 ### Etapa 13
 
+[Enlace a etapa 13](https://github.com/josanabr/flask-introduction/tree/etapa-13).
+
 En esta etapa se contenerizará la aplicación. 
 
 A través de la tecnología de Docker se llevará a cabo la creación de una imagen de contenedor la cual contiene todos los insumos para que corra la aplicación.
@@ -138,6 +140,27 @@ Para ejecutar el contenedor recien creado,
 
 ```
 docker container run  --rm -d -p 5000:5000 --name app.py app.py
+```
+
+### Etapa 14
+
+A continuación se presenta como llevar a cabo la ejecución del contenedor descrito en la [etapa 13](#etapa-13) a través del comando `docker-compose`.
+
+Primero se debe instalar la herramienta. 
+`docker-compose` se debe instalar en sistemas tipo Linux pues en otros ambientes como Mac o Windows este viene integrado en ambientes como Docker Desktop.
+
+La instalación de `docker-compose` en Linux se logra a través de este comando:
+
+```
+sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose && sudo chmod +x /usr/local/bin/docker-compose
+```
+
+Para tener una versión posiblemente más actualizada visitar [este enlace](https://docs.docker.com/compose/install/).
+
+Una vez el `docker-compose` se encuentre disponible se puede lanzar la ejecución del contenedo a través de este comando:
+
+```
+docker-compose up
 ```
 
 
