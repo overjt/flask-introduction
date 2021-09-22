@@ -57,9 +57,22 @@ def delete(id):
     try: 
         db.session.delete(task_to_delete) 
         db.session.commit() 
-        return redirect('/') 
+        if request.json:
+            return "Deleted!"
+        else: 
+            return redirect('/')
     except: 
         return "There was a problem deleting that task"
+
+@app.route('/delete', methods=['POST'])
+def delete_post():
+    if request.json and 'id' in request.json:
+        task_id = request.json.get('id', "")
+    else: 
+        task_id = request.form.get('id', "")
+    if not task_id:
+        return "task id is required", 400
+    return delete(task_id)
 
 @app.route('/update/<int:id>', methods=['GET', 'POST'])
 def update(id):
