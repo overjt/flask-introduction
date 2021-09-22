@@ -30,7 +30,10 @@ def index():
         if request.json and 'content' in request.json:
             task_content = request.json.get('content',"")
         else: 
-            task_content = request.form['content'] 
+            task_content = request.form.get('content',"") # Obtiene el contenido de la tarea, si no hay nada, devuelve una cadena vacia
+        
+        if not task_content: # Si no hay contenido, no se crea la tarea
+            return "task content is required", 400
         # 
         # Se crea un objeto conforme al modelo declarado 
         # 
